@@ -39,14 +39,14 @@ int main()
 		std::cin >> tmp;
 
 		int left = 0;
-		int right = n - 1;
+		int right = n;
 		int count = 0;
-		while (left < right)
+		while (right - left > 1)
 		{
 			int mid = (left + right) / 2;
-			if (arr[mid] < tmp) left = mid + 1; else right = mid;
-			if (arr[left] == tmp) count++;
+			if (arr[mid] <= tmp) left = mid; else right = mid;
 		}
+		for (int i = 0; i < right; i++) { if (arr[i] == tmp) count++; }
 		std::cout << count << " ";
 	}
 }
