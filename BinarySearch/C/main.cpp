@@ -20,9 +20,9 @@ void quick_sort(int* arr, int size)
 
 int main()
 {
-	int arr[100000]{};
 	int n, k;
 	std::cin >> n;
+	int* arr = new int[n];
 
 	for (int i = 0; i < n; i++)
 	{
@@ -49,4 +49,6 @@ int main()
 		for (int i = 0; i < right; i++) { if (arr[i] == tmp) count++; }
 		std::cout << count << " ";
 	}
+
+	delete[] arr;
 }
