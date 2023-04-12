@@ -19,5 +19,5 @@ int main()
 		if (middle * middle + sqrt(middle) < n) left = middle;
 		else right = middle;
 	}
-	std::cout << std::setprecision(7) << right;
+	std::cout << std::fixed << std::setprecision(7) << right;
 }
