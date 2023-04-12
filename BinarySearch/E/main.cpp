@@ -22,5 +22,5 @@ int main()
         if ((pow(x, 3) * a + pow(x, 2) * b + x * c + d) * (pow(r, 3) * a + pow(r, 2) * b + r * c + d) <= 0) l = x;
         else r = x;
     }
-    std::cout << std::setprecision(8) << l;
+    std::cout << std::fixed << std::setprecision(8) << l;
 }
