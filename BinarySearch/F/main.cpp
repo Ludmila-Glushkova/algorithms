@@ -18,4 +18,5 @@ int main()
         else r = m;
     }
     std::cout << l;
+    delete[] arr;
 }
